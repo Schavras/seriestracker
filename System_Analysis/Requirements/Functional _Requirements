@@ -1,0 +1,8 @@
+-------------------------CORE----------------------
+1) The user can login with his username and password.
+2) Display sorted list with the shows of current user, sorted by last active first.
+3) Botton beside every show, to go to the next released episode.
+4) More info for each show.
+5) On more info, display the infos of the show.
+6) More info for the next episode.
+7) Select a specific episode of a season and display all infos.

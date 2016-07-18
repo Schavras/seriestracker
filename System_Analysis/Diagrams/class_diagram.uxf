@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>220</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;SimplyDate&gt;&gt;
+Package::types
+{Some Properties}
+--
+-day: int
+-month: int
+-year: int
+-date: Date
+--
++SimplyDate()
++SimplyDate(day :int,month: int,year: int)
+-removeTime(day :int,month: int,year: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>90</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Episode&gt;&gt;
+Package::types
+{Some Properties}
+--
+-number: int
+-name: String
+-plot: String
+-rating: double
+--
++Episode()
++Episode(number: int, name: String)
+Episode(number: int, name: String, plot: String, 
+rating: double, dateOfRelease: SimplyDate )</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>170</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+r2=-dateOfRelease
+m2=0..1</panel_attributes>
+    <additional_attributes>180.0;80.0;140.0;80.0;140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
